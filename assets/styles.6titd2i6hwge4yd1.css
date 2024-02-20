@@ -1,0 +1,3653 @@
+      .cdk-overlay-container,
+      .cdk-global-overlay-wrapper {
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%
+      }
+
+      .cdk-overlay-container {
+        position: fixed;
+        z-index: 1000
+      }
+
+      .cdk-overlay-container:empty {
+        display: none
+      }
+
+      .cdk-global-overlay-wrapper {
+        display: flex;
+        position: absolute;
+        z-index: 1000
+      }
+
+      .cdk-overlay-pane {
+        position: absolute;
+        pointer-events: auto;
+        box-sizing: border-box;
+        z-index: 1000;
+        display: flex;
+        max-width: 100%;
+        max-height: 100%
+      }
+
+      .cdk-overlay-backdrop {
+        position: absolute;
+        inset: 0;
+        z-index: 1000;
+        pointer-events: auto;
+        -webkit-tap-highlight-color: transparent;
+        transition: opacity .4s cubic-bezier(.25, .8, .25, 1);
+        opacity: 0
+      }
+
+      .cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+        opacity: 1
+      }
+
+      .cdk-high-contrast-active .cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+        opacity: .6
+      }
+
+      .cdk-overlay-dark-backdrop {
+        background: rgba(0, 0, 0, .32)
+      }
+
+      .cdk-overlay-transparent-backdrop {
+        transition: visibility 1ms linear, opacity 1ms linear;
+        visibility: hidden;
+        opacity: 1
+      }
+
+      .cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing {
+        opacity: 0;
+        visibility: visible
+      }
+
+      .cdk-overlay-connected-position-bounding-box {
+        position: absolute;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        min-width: 1px;
+        min-height: 1px
+      }
+
+      .cdk-global-scrollblock {
+        position: fixed;
+        width: 100%;
+        overflow-y: scroll
+      }
+
+      [_nghost-bmo-c57] *[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] *[_ngcontent-bmo-c57]:before,
+      [_nghost-bmo-c57] *[_ngcontent-bmo-c57]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c57] h1[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] h2[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] h3[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] h4[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] h5[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] h6[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] ul[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] ol[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] li[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] pre[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] blockquote[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] figure[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] hr[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] p[_ngcontent-bmo-c57] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c57] input[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] textarea[_ngcontent-bmo-c57],
+      [_nghost-bmo-c57] select[_ngcontent-bmo-c57] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+      [_nghost-bmo-c145] *[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] *[_ngcontent-bmo-c145]:before,
+      [_nghost-bmo-c145] *[_ngcontent-bmo-c145]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c145] h1[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] h2[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] h3[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] h4[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] h5[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] h6[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] ul[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] ol[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] li[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] pre[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] blockquote[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] figure[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] hr[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] p[_ngcontent-bmo-c145] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c145] input[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] textarea[_ngcontent-bmo-c145],
+      [_nghost-bmo-c145] select[_ngcontent-bmo-c145] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-modal-panel-wrapper[_ngcontent-bmo-c145] {
+        width: 100%
+      }
+      [_nghost-bmo-c137] {
+        display: grid;
+        width: 100%
+      }
+      [_nghost-bmo-c65] {
+        display: inline-flex
+      }
+
+      .tru-core-cta-wrapper-size-fill[_nghost-bmo-c65] {
+        display: flex;
+        width: 100%
+      }
+
+      [_nghost-bmo-c65] .tru-core-loader-local-loader-wrapper {
+        border-width: var(--truBorderWidthMd) !important;
+        border-radius: var(--truBorderRadiusLg) !important
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c65] {
+        border: none;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background: transparent;
+        font: inherit;
+        line-height: normal;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        -webkit-appearance: none;
+        box-shadow: none;
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: var(--truAnimationDurationBase);
+        transition-timing-function: var(--truAnimationEasingBase);
+        position: relative;
+        transition-property: background-color, border-color;
+        text-align: var(--textAlign);
+        white-space: var(--whiteSpace);
+        border-style: solid
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c65]:focus {
+        outline: none
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c65]:focus-visible:before {
+        content: "";
+        position: absolute;
+        border: 1px solid;
+        border-color: var(--focusBorderColor);
+        inset: var(--focusBorderInset)
+      }
+
+      .tru-core-cta-icon-animate-left[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate-right[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate-down[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate-up[_ngcontent-bmo-c65] {
+        --iconEndGap: var(--truSpacing2xs);
+        transition-property: transform;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:hover .tru-core-cta-icon-animate-left[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:active .tru-core-cta-icon-animate-left[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:focus-visible .tru-core-cta-icon-animate-left[_ngcontent-bmo-c65] {
+        transform: translate(calc(var(--iconEndGap) * -1))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:hover .tru-core-cta-icon-animate-right[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:active .tru-core-cta-icon-animate-right[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:focus-visible .tru-core-cta-icon-animate-right[_ngcontent-bmo-c65] {
+        transform: translate(var(--iconEndGap))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:hover .tru-core-cta-icon-animate-up[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:active .tru-core-cta-icon-animate-up[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:focus-visible .tru-core-cta-icon-animate-up[_ngcontent-bmo-c65] {
+        transform: translateY(calc(var(--iconEndGap) * -1))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:hover .tru-core-cta-icon-animate-down[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:active .tru-core-cta-icon-animate-down[_ngcontent-bmo-c65],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c65]:focus-visible .tru-core-cta-icon-animate-down[_ngcontent-bmo-c65] {
+        transform: translateY(var(--iconEndGap))
+      }
+
+      .tru-core-cta-wrapper[_nghost-bmo-c65]>button[_ngcontent-bmo-c65]:disabled,
+      .tru-core-cta-wrapper[_nghost-bmo-c65]>a[_ngcontent-bmo-c65]:disabled {
+        opacity: .66;
+        filter: grayscale(1);
+        pointer-events: none
+      }
+      .light-theme-retail .tru-core-card,
+      tru-core-card.light-theme-retail {
+        border: none !important
+      }
+
+      .retail-login[_ngcontent-bmo-c184] {
+        background-color: #2e1a47;
+        height: 100vh
+      }
+
+      .wrap-login[_ngcontent-bmo-c184] {
+        overflow: hidden
+      }
+
+      .modal-button .tru-core-button-secondary {
+        white-space: normal !important
+      }
+
+      .bbtHstLnkPad[_ngcontent-bmo-c184] {
+        padding: 1em
+      }
+
+      .bbtHstLnkTop[_ngcontent-bmo-c184] {
+        padding-top: 1em
+      }
+
+      .bbtHstLnkTxt[_ngcontent-bmo-c184] {
+        padding-left: 10px;
+        padding-right: 10px
+      }
+
+      .rdc-grid--signin .tru-core-form-field-wrapper--invalid .tru-core-input__label {
+        color: #d61d00 !important
+      }
+
+      .rdc-grid--signin .tru-core-form-field-wrapper--invalid tru-core-form-field-label {
+        color: #d61d00 !important
+      }
+
+      .tru-core-input__input[type=password] {
+        font-size: 1rem !important
+      }
+
+      .d-flex[_ngcontent-bmo-c184] {
+        display: flex
+      }
+
+      .text-color[_ngcontent-bmo-c184] {
+        color: #2e1a47
+      }
+
+      .cardImg[_ngcontent-bmo-c184] {
+        width: 25%;
+        min-width: 240px;
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      .zelleContent[_ngcontent-bmo-c184] {
+        background-color: #2e1a47;
+        padding: 60px 25px
+      }
+
+      .listInfo[_ngcontent-bmo-c184] {
+        color: #707070fc;
+        font-size: 11px;
+        margin-left: 20px;
+        margin-top: 15px
+      }
+
+      .listInfo[_ngcontent-bmo-c184] li[_ngcontent-bmo-c184] {
+        margin-bottom: 15px
+      }
+
+      .opaqueText[_ngcontent-bmo-c184] {
+        font-size: 20px;
+        color: #fffffffa;
+        opacity: .7
+      }
+
+      .truistImg img {
+        height: 40px;
+        padding-right: 15px;
+        margin-top: 30px
+      }
+
+      .zelleImg img {
+        height: 40px;
+        padding-left: 15px;
+        border-left: 2px solid #2E1A47;
+        margin-top: 30px
+      }
+
+      .rowFlex[_ngcontent-bmo-c184] {
+        flex-direction: row !important
+      }
+
+      .head[_ngcontent-bmo-c184] {
+        color: #fffffffa;
+        font-size: 30px;
+        margin-right: 10px;
+        margin-top: 15px;
+        opacity: .7
+      }
+
+      .info[_ngcontent-bmo-c184] {
+        color: #fffffffa;
+        margin-left: 10px;
+        margin-top: 15px;
+        font-weight: 700
+      }
+
+      .tru-core-sign-in-qr-button[_ngcontent-bmo-c184] {
+        display: block;
+        width: "100%"
+      }
+
+      .retail.retail tru-core-image,
+      .commercial.commercial tru-core-image {
+        align-items: center;
+        justify-content: center
+      }
+
+      .line[_ngcontent-bmo-c184] {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #707070FA;
+        line-height: .1em;
+        margin: 10px 0 20px
+      }
+
+      .line[_ngcontent-bmo-c184] span[_ngcontent-bmo-c184] {
+        background: #fff;
+        padding: 0 10px;
+        color: #707070fa
+      }
+
+      .etpv_login_content[_ngcontent-bmo-c184] .disclaimer[_ngcontent-bmo-c184] {
+        display: flex;
+        flex-direction: column
+      }
+
+      tru-core-sign-in-header[_ngcontent-bmo-c184] h2[_ngcontent-bmo-c184] {
+        text-align: center !important
+      }
+      .footer[_ngcontent-bmo-c168] {
+        margin-top: var(--truSpacingLg)
+      }
+
+      .tru-core-collapse__trigger {
+        border-top: 1px solid #ccc !important;
+        border-left: 1px solid #ccc !important;
+        border-right: 1px solid #ccc !important
+      }
+
+      .collapse-container .tru-core-collapse__trigger {
+        width: -moz-fit-content !important;
+        width: fit-content !important;
+        background-color: var(--truColorBackgroundSecondary) !important;
+        gap: var(--truSpacing2xs);
+        border-top-left-radius: var(--truBorderRadiusMd);
+        border-top-right-radius: var(--truBorderRadiusMd)
+      }
+
+      .collapse-container .tru-core-collapse__panel-collapsable {
+        border-top: 1px solid #ccc !important
+      }
+
+      .logo-container[_ngcontent-bmo-c168] {
+        margin-bottom: var(--truSpacingMd);
+        display: flex;
+        justify-content: center
+      }
+
+      @media screen and (min-width: 700px) {
+        .logo-container[_ngcontent-bmo-c168] {
+          justify-content: flex-start
+        }
+      }
+
+      .link-group[_ngcontent-bmo-c168] {
+        display: flex;
+        flex-direction: column;
+        gap: var(--truSpacingSm);
+        align-items: center
+      }
+
+      @media screen and (min-width: 700px) {
+        .link-group[_ngcontent-bmo-c168] {
+          align-items: flex-start
+        }
+      }
+
+      .content-container[_ngcontent-bmo-c168] {
+        padding-top: var(--truSpacingLg);
+        padding-bottom: var(--truSpacingLg)
+      }
+
+      .copyright-container[_ngcontent-bmo-c168] {
+        background-color: var(--truColorNeutralBlack);
+        color: var(--truColorNeutralWhite);
+        text-align: center;
+        padding-top: var(--truSpacingMd);
+        padding-bottom: var(--truSpacingMd)
+      }
+
+      .footer .footer-link-hover .tru-core-link-text {
+        color: #afabc9 !important
+      }
+
+      .footer .footer-link-hover .tru-core-link-text:hover {
+        text-decoration: underline !important;
+        color: #fff !important
+      }
+
+      .footer .tru-core-link .tru-core-link-text {
+        font-weight: 100 !important
+      }
+
+      .footer .tru-core-link a {
+        text-decoration: underline !important;
+        color: #2e1a47 !important
+      }
+
+      .ot-sdk-show-settings[_ngcontent-bmo-c168] {
+        text-decoration: none !important;
+        color: var(--truColorAux5) !important;
+        font-weight: 100 !important
+      }
+
+      .ot-sdk-show-settings[_ngcontent-bmo-c168]:hover {
+        text-decoration: underline !important;
+        cursor: pointer;
+        color: #fff !important
+      }
+
+      .footer .footer-link-hover a.tru-core-cta.tru-core-cta-styled {
+        color: var(--truColorAux5) !important;
+        text-decoration: none !important
+      }
+
+      .footer .footer-link-hover a.tru-core-cta.tru-core-cta-styled:hover {
+        text-decoration: underline !important;
+        color: #fff !important
+      }
+      [_nghost-bmo-c105] *[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] *[_ngcontent-bmo-c105]:before,
+      [_nghost-bmo-c105] *[_ngcontent-bmo-c105]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c105] h1[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] h2[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] h3[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] h4[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] h5[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] h6[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] ul[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] ol[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] li[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] pre[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] blockquote[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] figure[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] hr[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] p[_ngcontent-bmo-c105] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c105] input[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] textarea[_ngcontent-bmo-c105],
+      [_nghost-bmo-c105] select[_ngcontent-bmo-c105] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-collapse__panel--custom-trigger .tru-core-collapse__panel-collapsable>div:first-child {
+        padding-top: var(--truSpacingMd)
+      }
+
+      .tru-core-collapse__trigger {
+        border: none;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background: transparent;
+        font: inherit;
+        line-height: normal;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        -webkit-appearance: none;
+        box-shadow: none;
+        padding: var(--truSpacingMd);
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightBold);
+        line-height: var(--truLineHeightSm);
+        color: var(--truColorFgStd);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+        position: relative
+      }
+
+      .tru-core-collapse__trigger:focus {
+        outline: none
+      }
+
+      .tru-core-collapse__trigger:focus-visible:before {
+        content: "";
+        position: absolute;
+        border: var(--truBorderWidthSm) solid var(--truColorBorderFocus);
+        border-radius: var(--truBorderRadiusSm);
+        inset: 2px
+      }
+
+      .tru-core-collapse__trigger[aria-expanded=true] {
+        color: var(--truColorFgAlt)
+      }
+
+      .tru-core-collapse__trigger .tru-core-icon-wrapper {
+        color: var(--truColorFgActionStd);
+        transition: color var(--truAnimationDurationBase) var(--truAnimationEasingBase)
+      }
+
+      .tru-core-collapse__trigger:hover .tru-core-icon-wrapper,
+      .tru-core-collapse__trigger:focus-visible .tru-core-icon-wrapper {
+        color: var(--truColorFgActionHover)
+      }
+
+      .tru-core-collapse__trigger:active .tru-core-icon-wrapper,
+      .tru-core-collapse__trigger[aria-expanded=true] .tru-core-icon-wrapper {
+        color: var(--truColorFgActionActive)
+      }
+
+      .tru-core-collapse__trigger {
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .tru-core-collapse__trigger:disabled {
+        opacity: .66;
+        filter: grayscale(1);
+        pointer-events: none
+      }
+
+      .tru-core-collapse__panel--compact .tru-core-collapse__panel--custom-trigger .tru-core-collapse__panel-collapsable>div:first-child {
+        padding-top: var(--truSpacingXs)
+      }
+
+      .tru-core-collapse__panel--compact .tru-core-collapse__trigger {
+        padding: var(--truSpacingXs) 0
+      }
+
+      .tru-core-collapse__panel--compact .tru-core-collapse__content,
+      .tru-core-collapse__panel--compact .tru-core-collapse__actions {
+        padding: 0 var(--truSpacingXs) var(--truSpacingXs) var(--truSpacingXs)
+      }
+      [_nghost-bmo-c107] {
+        display: block;
+        background-color: var(--truColorBgStd);
+        border-bottom: var(--truBorderWidthSm) solid var(--truColorBorderStd)
+      }
+
+      [_nghost-bmo-c107] *[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] *[_ngcontent-bmo-c107]:before,
+      [_nghost-bmo-c107] *[_ngcontent-bmo-c107]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c107] h1[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] h2[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] h3[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] h4[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] h5[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] h6[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] ul[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] ol[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] li[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] pre[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] blockquote[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] figure[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] hr[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] p[_ngcontent-bmo-c107] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c107] input[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] textarea[_ngcontent-bmo-c107],
+      [_nghost-bmo-c107] select[_ngcontent-bmo-c107] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-collapse__panel--compact[_nghost-bmo-c107] {
+        border-bottom: 0 !important
+      }
+
+      .tru-core-collapse__panel-collapsable[_ngcontent-bmo-c107] {
+        width: 100%
+      }
+      [_nghost-bmo-c108] *[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] *[_ngcontent-bmo-c108]:before,
+      [_nghost-bmo-c108] *[_ngcontent-bmo-c108]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c108] h1[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] h2[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] h3[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] h4[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] h5[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] h6[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] ul[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] ol[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] li[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] pre[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] blockquote[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] figure[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] hr[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] p[_ngcontent-bmo-c108] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c108] input[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] textarea[_ngcontent-bmo-c108],
+      [_nghost-bmo-c108] select[_ngcontent-bmo-c108] {
+        font: inherit;
+        letter-spacing: inherit
+      }[_nghost-bmo-c100] *[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] *[_ngcontent-bmo-c100]:before,
+      [_nghost-bmo-c100] *[_ngcontent-bmo-c100]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c100] h1[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] h2[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] h3[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] h4[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] h5[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] h6[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] ul[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] ol[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] li[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] pre[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] blockquote[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] figure[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] hr[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] p[_ngcontent-bmo-c100] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c100] input[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] textarea[_ngcontent-bmo-c100],
+      [_nghost-bmo-c100] select[_ngcontent-bmo-c100] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+      .tru-core-card-center-card-elements[_nghost-bmo-c100] {
+        text-align: center;
+        justify-content: center
+      }
+
+      .tru-core-card-stretch-card-height[_nghost-bmo-c100] {
+        align-self: stretch
+      }
+
+      .tru-core-card-wrapper[_nghost-bmo-c100] {
+        display: flex
+      }
+
+      .tru-core-card-legacy[_ngcontent-bmo-c100] {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--truColorBgStd);
+        border: var(--truBorderWidthSm) solid var(--truColorBorderStd);
+        border-radius: var(--truBorderRadiusMd);
+        width: 100%;
+        overflow: hidden
+      }
+
+      .tru-core-card-center-card-elements[_nghost-bmo-c100] .tru-core-card-legacy[_ngcontent-bmo-c100] {
+        text-align: center;
+        justify-content: center
+      }
+
+      .tru-core-card-stretch-card-height[_nghost-bmo-c100] .tru-core-card-legacy[_ngcontent-bmo-c100] {
+        align-self: stretch
+      }
+
+      .tru-core-card-section:first-of-type:not(.tru-core-card-splash-block):not(.tru-core-card-feature):not(.tru-core-card-actions) {
+        padding-top: var(--truSpacingXl)
+      }
+
+      .tru-core-card-section:last-child:not(.tru-core-card-splash-block):not(.tru-core-card-feature) {
+        padding-bottom: var(--truSpacingLg)
+      }
+
+      .tru-core-card-section+.tru-core-card-section:not(.tru-core-card-splash-block):not(.tru-core-card-feature):not(.tru-core-card-actions) {
+        padding-top: var(--truSpacingLg)
+      }
+
+      .tru-core-card-section+.tru-core-card-splash-block,
+      .tru-core-card-section+.tru-core-card-feature {
+        margin-top: var(--truSpacingLg)
+      }
+      [_nghost-bmo-c153] {
+        display: inline-block;
+        width: 100%
+      }
+
+      [_nghost-bmo-c153] *[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] *[_ngcontent-bmo-c153]:before,
+      [_nghost-bmo-c153] *[_ngcontent-bmo-c153]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c153] h1[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] h2[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] h3[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] h4[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] h5[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] h6[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] ul[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] ol[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] li[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] pre[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] blockquote[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] figure[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] hr[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] p[_ngcontent-bmo-c153] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c153] input[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] textarea[_ngcontent-bmo-c153],
+      [_nghost-bmo-c153] select[_ngcontent-bmo-c153] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-sign-in-card .tru-core-card {
+        padding: var(--truSpacing2xl) var(--truSpacingLg)
+      }
+
+      .tru-core-sign-in-card .tru-core-card-section {
+        padding: 0 !important
+      }
+
+      .tru-core-sign-in-header[_ngcontent-bmo-c153]:where(:not(.tru-core-style-sr-only))+.tru-core-sign-in-block-message[_ngcontent-bmo-c153],
+      .tru-core-sign-in-header[_ngcontent-bmo-c153]:where(:not(.tru-core-style-sr-only))+.tru-core-sign-in-form[_ngcontent-bmo-c153] {
+        margin-top: var(--truSpacingLg)
+      }
+
+      .tru-core-sign-in-header[_ngcontent-bmo-c153]:where(:not(.tru-core-style-sr-only))+.tru-core-sign-in-introduction[_ngcontent-bmo-c153] {
+        margin-top: var(--truSpacingMd)
+      }
+
+      .tru-core-sign-in-block-message[_ngcontent-bmo-c153]+.tru-core-sign-in-form[_ngcontent-bmo-c153] {
+        margin-top: var(--truSpacingLg)
+      }
+
+      .tru-core-sign-in-introduction[_ngcontent-bmo-c153]+.tru-core-sign-in-form[_ngcontent-bmo-c153] {
+        margin-top: var(--truSpacing2xl)
+      }
+
+      .tru-core-sign-in-block-message .tru-core-block-message__pre-content {
+        padding: var(--truSpacingMd) var(--truSpacingSm) !important
+      }
+
+      .tru-core-sign-in-block-message .tru-core-block-message__pre-content .tru-core-icon {
+        width: var(--truIconSizeMd);
+        height: var(--truIconSizeMd)
+      }
+
+      .tru-core-sign-in__details[_ngcontent-bmo-c153] {
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightRegular)
+      }
+      [_nghost-bmo-c63] {
+        display: flex;
+        flex-direction: column
+      }
+      [_nghost-bmo-c98] {
+        padding-left: var(--truSpacingLg);
+        padding-right: var(--truSpacingLg);
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column
+      }
+
+      [_nghost-bmo-c98] *[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] *[_ngcontent-bmo-c98]:before,
+      [_nghost-bmo-c98] *[_ngcontent-bmo-c98]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c98] h1[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] h2[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] h3[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] h4[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] h5[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] h6[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] ul[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] ol[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] li[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] pre[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] blockquote[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] figure[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] hr[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] p[_ngcontent-bmo-c98] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c98] input[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] textarea[_ngcontent-bmo-c98],
+      [_nghost-bmo-c98] select[_ngcontent-bmo-c98] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-card-center-card-elements [_nghost-bmo-c98] {
+        text-align: center;
+        justify-content: center
+      }
+      [_nghost-bmo-c110] {
+        display: flex
+      }
+
+      [_nghost-bmo-c110] *[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] *[_ngcontent-bmo-c110]:before,
+      [_nghost-bmo-c110] *[_ngcontent-bmo-c110]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c110] h1[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] h2[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] h3[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] h4[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] h5[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] h6[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] ul[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] ol[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] li[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] pre[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] blockquote[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] figure[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] hr[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] p[_ngcontent-bmo-c110] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c110] input[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] textarea[_ngcontent-bmo-c110],
+      [_nghost-bmo-c110] select[_ngcontent-bmo-c110] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-input-container[_ngcontent-bmo-c110] {
+        width: 100%
+      }
+
+      .tru-core-input__label[_ngcontent-bmo-c110] {
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightRegular);
+        color: var(--truColorFgStd);
+        line-height: var(--truLineHeightMd);
+        display: inline-block
+      }
+
+      .tru-core-input__input-group[_ngcontent-bmo-c110] {
+        border-radius: var(--truBorderRadiusMd);
+        display: flex;
+        background-color: var(--truColorBgStd);
+        border: var(--truBorderWidthSm) solid var(--truColorBorderContrast);
+        position: relative;
+        overflow: hidden;
+        height: var(--truSizingMd)
+      }
+
+      .tru-core-input__input-wrapper[_ngcontent-bmo-c110] {
+        width: 100%;
+        display: flex;
+        position: relative
+      }
+
+      .tru-core-input__input-group-has-focus[_ngcontent-bmo-c110] .tru-core-input__input-wrapper[_ngcontent-bmo-c110]:before {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        border-radius: 3px;
+        border: var(--truBorderWidthSm) solid var(--truColorBorderFocus);
+        pointer-events: none
+      }
+
+      .tru-core-input__input[_ngcontent-bmo-c110] {
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightRegular);
+        line-height: var(--truLineHeightMd);
+        color: var(--truColorFgStd);
+        padding: 0 var(--truSpacingMd);
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        margin: 0;
+        overflow: auto;
+        border-radius: var(--truBorderRadiusMd);
+        height: 100%;
+        text-align: left
+      }
+
+      .tru-core-input__input[_ngcontent-bmo-c110]:focus {
+        outline: none
+      }
+
+      .tru-core-input__input[type=password][_ngcontent-bmo-c110] {
+        letter-spacing: .2rem
+      }
+
+      .tru-core-input__input[_ngcontent-bmo-c110]::-ms-reveal,
+      .tru-core-input__input[_ngcontent-bmo-c110]::-ms-clear {
+        display: none
+      }
+
+      .tru-core-input__input[type=button][_ngcontent-bmo-c110] {
+        overflow: hidden
+      }
+
+      .tru-core-input__input[type=number][_ngcontent-bmo-c110]::-webkit-inner-spin-button {
+        -webkit-appearance: none
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c110] {
+        height: auto;
+        margin: auto;
+        cursor: grab;
+        padding: 0 var(--truSpacingMd) 0 var(--truSpacingXs)
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c110]:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c110]::file-selector-button {
+        border: none;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background: transparent;
+        font: inherit;
+        line-height: normal;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        -webkit-appearance: none;
+        box-shadow: none;
+        background-color: var(--truColorFgActionStd);
+        color: var(--truColorBgStd);
+        font-size: var(--truFontSizeSm);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightBold);
+        border-radius: var(--truBorderRadius2xl);
+        padding: var(--truSpacingXs) var(--truSpacingSm);
+        margin-right: var(--truSpacingXs);
+        pointer-events: none
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c110]:hover::file-selector-button,
+      .tru-core-input__input[type=file][_ngcontent-bmo-c110]:focus-visible::file-selector-button {
+        background-color: var(--truColorFgActionHover);
+        color: var(--truColorBgStd)
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c110]:active::file-selector-button {
+        background-color: var(--truColorFgActionActive);
+        color: var(--truColorBgStd)
+      }
+
+      .tru-core-input-clear-button .tru-core-button:before,
+      .tru-core-input-mask-button-wrapper .tru-core-button:before {
+        border-color: var(--truColorBorderFocus);
+        inset: 2px;
+        border-radius: 3px
+      }
+
+      .tru-core-form-field-wrapper--invalid[_nghost-bmo-c110] .tru-core-input__input-group[_ngcontent-bmo-c110] {
+        border-color: var(--truColorStatusErrorContrast)
+      }
+
+      .tru-core-form-field-wrapper--invalid[_nghost-bmo-c110] .tru-core-input__label[_ngcontent-bmo-c110] {
+        color: var(--truColorStatusErrorContrast)
+      }
+
+      [_nghost-bmo-c110] {
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .is-disabled[_nghost-bmo-c110] {
+        opacity: .66;
+        filter: grayscale(1);
+        pointer-events: none
+      }
+
+      .is-disabled[_nghost-bmo-c110] .tru-core-input__input-group {
+        background-color: var(--truColorBgAlt)
+      }
+
+      .tru-core-input__input-group-readonly[_ngcontent-bmo-c110] {
+        background-color: var(--truColorBgAlt)
+      }
+      [_nghost-bmo-c87] {
+        display: inline-block;
+        font-family: var(--truFontFamilyPrimary);
+        font-size: var(--truFontSizeMd);
+        font-weight: var(--truFontWeightRegular);
+        line-height: var(--truLineHeightMd)
+      }
+
+      [_nghost-bmo-c87] *[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] *[_ngcontent-bmo-c87]:before,
+      [_nghost-bmo-c87] *[_ngcontent-bmo-c87]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c87] h1[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] h2[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] h3[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] h4[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] h5[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] h6[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] ul[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] ol[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] li[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] pre[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] blockquote[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] figure[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] hr[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] p[_ngcontent-bmo-c87] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c87] input[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] textarea[_ngcontent-bmo-c87],
+      [_nghost-bmo-c87] select[_ngcontent-bmo-c87] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+      [_nghost-bmo-c133] {
+        display: flex
+      }
+
+      [_nghost-bmo-c133] *[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] *[_ngcontent-bmo-c133]:before,
+      [_nghost-bmo-c133] *[_ngcontent-bmo-c133]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c133] h1[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] h2[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] h3[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] h4[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] h5[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] h6[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] ul[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] ol[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] li[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] pre[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] blockquote[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] figure[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] hr[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] p[_ngcontent-bmo-c133] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c133] input[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] textarea[_ngcontent-bmo-c133],
+      [_nghost-bmo-c133] select[_ngcontent-bmo-c133] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-input-container[_ngcontent-bmo-c133] {
+        width: 100%
+      }
+
+      .tru-core-input__label[_ngcontent-bmo-c133] {
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightRegular);
+        color: var(--truColorFgStd);
+        line-height: var(--truLineHeightMd);
+        display: inline-block
+      }
+
+      .tru-core-input__input-group[_ngcontent-bmo-c133] {
+        border-radius: var(--truBorderRadiusMd);
+        display: flex;
+        background-color: var(--truColorBgStd);
+        border: var(--truBorderWidthSm) solid var(--truColorBorderContrast);
+        position: relative;
+        overflow: hidden;
+        height: var(--truSizingMd)
+      }
+
+      .tru-core-input__input-wrapper[_ngcontent-bmo-c133] {
+        width: 100%;
+        display: flex;
+        position: relative
+      }
+
+      .tru-core-input__input-group-has-focus[_ngcontent-bmo-c133] .tru-core-input__input-wrapper[_ngcontent-bmo-c133]:before {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        border-radius: 3px;
+        border: var(--truBorderWidthSm) solid var(--truColorBorderFocus);
+        pointer-events: none
+      }
+
+      .tru-core-input__input[_ngcontent-bmo-c133] {
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightRegular);
+        line-height: var(--truLineHeightMd);
+        color: var(--truColorFgStd);
+        padding: 0 var(--truSpacingMd);
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        margin: 0;
+        overflow: auto;
+        border-radius: var(--truBorderRadiusMd);
+        height: 100%;
+        text-align: left
+      }
+
+      .tru-core-input__input[_ngcontent-bmo-c133]:focus {
+        outline: none
+      }
+
+      .tru-core-input__input[type=password][_ngcontent-bmo-c133] {
+        letter-spacing: .2rem
+      }
+
+      .tru-core-input__input[_ngcontent-bmo-c133]::-ms-reveal,
+      .tru-core-input__input[_ngcontent-bmo-c133]::-ms-clear {
+        display: none
+      }
+
+      .tru-core-input__input[type=button][_ngcontent-bmo-c133] {
+        overflow: hidden
+      }
+
+      .tru-core-input__input[type=number][_ngcontent-bmo-c133]::-webkit-inner-spin-button {
+        -webkit-appearance: none
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c133] {
+        height: auto;
+        margin: auto;
+        cursor: grab;
+        padding: 0 var(--truSpacingMd) 0 var(--truSpacingXs)
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c133]:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c133]::file-selector-button {
+        border: none;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background: transparent;
+        font: inherit;
+        line-height: normal;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        -webkit-appearance: none;
+        box-shadow: none;
+        background-color: var(--truColorFgActionStd);
+        color: var(--truColorBgStd);
+        font-size: var(--truFontSizeSm);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightBold);
+        border-radius: var(--truBorderRadius2xl);
+        padding: var(--truSpacingXs) var(--truSpacingSm);
+        margin-right: var(--truSpacingXs);
+        pointer-events: none
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c133]:hover::file-selector-button,
+      .tru-core-input__input[type=file][_ngcontent-bmo-c133]:focus-visible::file-selector-button {
+        background-color: var(--truColorFgActionHover);
+        color: var(--truColorBgStd)
+      }
+
+      .tru-core-input__input[type=file][_ngcontent-bmo-c133]:active::file-selector-button {
+        background-color: var(--truColorFgActionActive);
+        color: var(--truColorBgStd)
+      }
+
+      .tru-core-input-clear-button .tru-core-button:before,
+      .tru-core-input-mask-button-wrapper .tru-core-button:before {
+        border-color: var(--truColorBorderFocus);
+        inset: 2px;
+        border-radius: 3px
+      }
+
+      .tru-core-form-field-wrapper--invalid[_nghost-bmo-c133] .tru-core-input__input-group[_ngcontent-bmo-c133] {
+        border-color: var(--truColorStatusErrorContrast)
+      }
+
+      .tru-core-form-field-wrapper--invalid[_nghost-bmo-c133] .tru-core-input__label[_ngcontent-bmo-c133] {
+        color: var(--truColorStatusErrorContrast)
+      }
+
+      [_nghost-bmo-c133] {
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .is-disabled[_nghost-bmo-c133] {
+        opacity: .66;
+        filter: grayscale(1);
+        pointer-events: none
+      }
+
+      .is-disabled[_nghost-bmo-c133] .tru-core-input__input-group {
+        background-color: var(--truColorBgAlt)
+      }
+
+      .tru-core-input__input-group-readonly[_ngcontent-bmo-c133] {
+        background-color: var(--truColorBgAlt)
+      }
+
+      [_nghost-bmo-c97] {
+        padding-left: var(--truSpacingLg);
+        padding-right: var(--truSpacingLg);
+        display: flex
+      }
+
+      [_nghost-bmo-c97] *[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] *[_ngcontent-bmo-c97]:before,
+      [_nghost-bmo-c97] *[_ngcontent-bmo-c97]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c97] h1[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] h2[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] h3[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] h4[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] h5[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] h6[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] ul[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] ol[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] li[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] pre[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] blockquote[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] figure[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] hr[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] p[_ngcontent-bmo-c97] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c97] input[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] textarea[_ngcontent-bmo-c97],
+      [_nghost-bmo-c97] select[_ngcontent-bmo-c97] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      [_nghost-bmo-c97]:first-child {
+        padding-top: var(--truSpacingLg)
+      }
+
+      [_nghost-bmo-c97]:not(:first-child) {
+        padding-top: var(--truSpacing2xl)
+      }
+
+      .tru-core-card-stretch-action-elements [_nghost-bmo-c97] {
+        flex-direction: column
+      }
+
+      .tru-core-card-stretch-action-elements .tru-core-card-actions .tru-core-cta {
+        width: 100%
+      }
+
+      .tru-core-card-stretch-card-height [_nghost-bmo-c97] {
+        flex-grow: 1;
+        align-items: flex-end
+      }
+
+      .tru-core-card-center-card-elements [_nghost-bmo-c97] {
+        text-align: center;
+        justify-content: center
+      }
+      [_nghost-bmo-c60] *[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] *[_ngcontent-bmo-c60]:before,
+      [_nghost-bmo-c60] *[_ngcontent-bmo-c60]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c60] h1[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] h2[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] h3[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] h4[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] h5[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] h6[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] ul[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] ol[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] li[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] pre[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] blockquote[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] figure[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] hr[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] p[_ngcontent-bmo-c60] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c60] input[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] textarea[_ngcontent-bmo-c60],
+      [_nghost-bmo-c60] select[_ngcontent-bmo-c60] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+      
+      [_nghost-bmo-c66] {
+        display: inline-flex
+      }
+
+      .tru-core-cta-wrapper-size-fill[_nghost-bmo-c66] {
+        display: flex;
+        width: 100%
+      }
+
+      [_nghost-bmo-c66] .tru-core-loader-local-loader-wrapper {
+        border-width: var(--truBorderWidthMd) !important;
+        border-radius: var(--truBorderRadiusLg) !important
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c66] {
+        border: none;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background: transparent;
+        font: inherit;
+        line-height: normal;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        -webkit-appearance: none;
+        box-shadow: none;
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: var(--truAnimationDurationBase);
+        transition-timing-function: var(--truAnimationEasingBase);
+        position: relative;
+        transition-property: background-color, border-color;
+        text-align: var(--textAlign);
+        white-space: var(--whiteSpace);
+        border-style: solid
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c66]:focus {
+        outline: none
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c66]:focus-visible:before {
+        content: "";
+        position: absolute;
+        border: 1px solid;
+        border-color: var(--focusBorderColor);
+        inset: var(--focusBorderInset)
+      }
+
+      .tru-core-cta-icon-animate-left[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate-right[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate-down[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate-up[_ngcontent-bmo-c66] {
+        --iconEndGap: var(--truSpacing2xs);
+        transition-property: transform;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:hover .tru-core-cta-icon-animate-left[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:active .tru-core-cta-icon-animate-left[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:focus-visible .tru-core-cta-icon-animate-left[_ngcontent-bmo-c66] {
+        transform: translate(calc(var(--iconEndGap) * -1))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:hover .tru-core-cta-icon-animate-right[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:active .tru-core-cta-icon-animate-right[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:focus-visible .tru-core-cta-icon-animate-right[_ngcontent-bmo-c66] {
+        transform: translate(var(--iconEndGap))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:hover .tru-core-cta-icon-animate-up[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:active .tru-core-cta-icon-animate-up[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:focus-visible .tru-core-cta-icon-animate-up[_ngcontent-bmo-c66] {
+        transform: translateY(calc(var(--iconEndGap) * -1))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:hover .tru-core-cta-icon-animate-down[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:active .tru-core-cta-icon-animate-down[_ngcontent-bmo-c66],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c66]:focus-visible .tru-core-cta-icon-animate-down[_ngcontent-bmo-c66] {
+        transform: translateY(var(--iconEndGap))
+      }
+
+      .tru-core-cta-wrapper[_nghost-bmo-c66]>button[_ngcontent-bmo-c66]:disabled,
+      .tru-core-cta-wrapper[_nghost-bmo-c66]>a[_ngcontent-bmo-c66]:disabled {
+        opacity: .66;
+        filter: grayscale(1);
+        pointer-events: none
+      }
+    
+    
+      [_nghost-bmo-c54] {
+        display: inline-flex
+      }
+
+      [_nghost-bmo-c54] *[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] *[_ngcontent-bmo-c54]:before,
+      [_nghost-bmo-c54] *[_ngcontent-bmo-c54]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c54] h1[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] h2[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] h3[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] h4[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] h5[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] h6[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] ul[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] ol[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] li[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] pre[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] blockquote[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] figure[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] hr[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] p[_ngcontent-bmo-c54] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c54] input[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] textarea[_ngcontent-bmo-c54],
+      [_nghost-bmo-c54] select[_ngcontent-bmo-c54] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-icon--xs[_ngcontent-bmo-c54] {
+        height: var(--truIconSizeXs);
+        width: var(--truIconSizeXs)
+      }
+
+      .tru-core-icon--sm[_ngcontent-bmo-c54] {
+        height: var(--truIconSizeSm);
+        width: var(--truIconSizeSm)
+      }
+
+      .tru-core-icon--md[_ngcontent-bmo-c54] {
+        height: var(--truIconSizeMd);
+        width: var(--truIconSizeMd)
+      }
+
+      .tru-core-icon--lg[_ngcontent-bmo-c54] {
+        height: var(--truIconSizeLg);
+        width: var(--truIconSizeLg)
+      }
+
+      .tru-core-icon--xl[_ngcontent-bmo-c54] {
+        height: var(--truIconSizeXl);
+        width: var(--truIconSizeXl)
+      }
+    
+    
+      [_nghost-bmo-c148] {
+        display: flex
+      }
+
+      [_nghost-bmo-c148] *[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] *[_ngcontent-bmo-c148]:before,
+      [_nghost-bmo-c148] *[_ngcontent-bmo-c148]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c148] h1[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] h2[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] h3[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] h4[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] h5[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] h6[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] ul[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] ol[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] li[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] pre[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] blockquote[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] figure[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] hr[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] p[_ngcontent-bmo-c148] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c148] input[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] textarea[_ngcontent-bmo-c148],
+      [_nghost-bmo-c148] select[_ngcontent-bmo-c148] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      [_nghost-bmo-c148] fieldset[_ngcontent-bmo-c148] {
+        width: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0
+      }
+
+      .tru-core-radio-group__legend[_ngcontent-bmo-c148] {
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightBold);
+        color: var(--truColorFgAlt);
+        text-align: left;
+        margin-bottom: var(--truSpacingSm)
+      }
+
+      .tru-core-radio-group__legend-with-contextual-help[_ngcontent-bmo-c148] {
+        float: left;
+        margin-right: var(--truSpacingXs)
+      }
+
+      .tru-core-radio-group__legend-with-contextual-help[_ngcontent-bmo-c148]+.tru-core-form-field-contextual-help-tooltip[_ngcontent-bmo-c148]+*[_ngcontent-bmo-c148] {
+        clear: both
+      }
+
+      .tru-core-radio-group__legend--screen-reader-only[_ngcontent-bmo-c148] {
+        margin-bottom: 0
+      }
+
+      .tru-core-form-field-wrapper--invalid[_nghost-bmo-c148] .tru-core-radio-group__legend[_ngcontent-bmo-c148] {
+        color: var(--truColorStatusErrorContrast)
+      }
+
+      [_nghost-bmo-c148] {
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .group-is-disabled[_nghost-bmo-c148] {
+        opacity: .66;
+        filter: grayscale(1)
+      }
+    
+    
+      [_nghost-bmo-c147] {
+        --size: 24px;
+        display: block;
+        width: -moz-fit-content;
+        width: fit-content
+      }
+
+      [_nghost-bmo-c147] *[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] *[_ngcontent-bmo-c147]:before,
+      [_nghost-bmo-c147] *[_ngcontent-bmo-c147]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c147] h1[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] h2[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] h3[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] h4[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] h5[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] h6[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] ul[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] ol[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] li[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] pre[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] blockquote[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] figure[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] hr[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] p[_ngcontent-bmo-c147] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c147] input[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] textarea[_ngcontent-bmo-c147],
+      [_nghost-bmo-c147] select[_ngcontent-bmo-c147] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-radio-button-input__wrapper[_ngcontent-bmo-c147] {
+        display: flex;
+        position: relative;
+        align-items: center
+      }
+
+      .tru-core-radio-button__input[_ngcontent-bmo-c147] {
+        margin: 0;
+        flex-shrink: 0;
+        align-self: flex-start;
+        opacity: 0;
+        height: var(--size);
+        width: var(--size);
+        cursor: pointer
+      }
+
+      .tru-core-radio-button__input[_ngcontent-bmo-c147]:where(:checked)+.tru-core-radio-button__custom-input[_ngcontent-bmo-c147] {
+        border-color: var(--truColorFgSelectionStd);
+        box-shadow: inset 0 0 0 var(--truBorderWidthSm) var(--truColorFgSelectionStd)
+      }
+
+      .tru-core-radio-button__input[_ngcontent-bmo-c147]:where(:checked)+.tru-core-radio-button__custom-input[_ngcontent-bmo-c147]:after {
+        opacity: 1
+      }
+
+      .tru-core-radio-button__input[_ngcontent-bmo-c147]:where(:not(:checked)):hover+.tru-core-radio-button__custom-input[_ngcontent-bmo-c147],
+      .tru-core-radio-button__input[_ngcontent-bmo-c147]:where(:not(:checked)):focus-visible+.tru-core-radio-button__custom-input[_ngcontent-bmo-c147] {
+        border-color: var(--truColorFgSelectionHover);
+        box-shadow: inset 0 0 0 var(--truBorderWidthMd) var(--truColorFgSelectionHover)
+      }
+
+      .tru-core-radio-button__input[_ngcontent-bmo-c147]:where(:not(:checked)):active+.tru-core-radio-button__custom-input[_ngcontent-bmo-c147] {
+        border-color: var(--truColorFgSelectionActive);
+        box-shadow: inset 0 0 0 var(--truBorderWidthMd) var(--truColorFgSelectionActive)
+      }
+
+      .tru-core-radio-button__input[_ngcontent-bmo-c147]:where(:focus-visible)+.tru-core-radio-button__custom-input[_ngcontent-bmo-c147]:before {
+        content: "";
+        position: absolute;
+        inset: -3px;
+        border-radius: var(--truBorderRadiusRound);
+        box-shadow: 0 0 0 var(--truBorderWidthSm) var(--truColorBorderFocus)
+      }
+
+      .tru-core-radio-button__input[_ngcontent-bmo-c147]:where(:focus-visible):active+.tru-core-radio-button__custom-input[_ngcontent-bmo-c147]:before {
+        display: none
+      }
+
+      .tru-core-radio-button__custom-input[_ngcontent-bmo-c147] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: var(--size);
+        width: var(--size);
+        border-radius: var(--truBorderRadiusRound);
+        border: var(--truBorderWidthSm) solid;
+        border-color: var(--truColorFgSelectionStd);
+        box-shadow: inset 0 0 0 var(--truBorderWidthSm) var(--truColorFgSelectionStd);
+        pointer-events: none;
+        transition-property: box-shadow, border-color;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .tru-core-radio-button__custom-input[_ngcontent-bmo-c147]:after {
+        content: "";
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 60%;
+        height: 60%;
+        background-color: var(--truColorFgSelectionStd);
+        border-radius: var(--truBorderRadiusRound);
+        transform: translate(-50%, -50%);
+        transition: opacity var(--truAnimationDurationFast) var(--truAnimationEasingBase)
+      }
+
+      .tru-core-radio-button__label[_ngcontent-bmo-c147] {
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightRegular);
+        color: var(--truColorFgStd);
+        line-height: var(--truLineHeightMd);
+        display: inline-block;
+        cursor: pointer
+      }
+
+      .tru-core-radio-button__subtext[_ngcontent-bmo-c147] {
+        color: var(--truColorFgStd);
+        margin-left: calc(var(--size) + var(--truSpacingSm))
+      }
+
+      [_nghost-bmo-c147] {
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .tru-core-radio-button--disabled[_nghost-bmo-c147] {
+        opacity: .66;
+        filter: grayscale(1);
+        pointer-events: none
+      }
+    
+    
+      [_nghost-bmo-c55] {
+        display: flex
+      }
+
+      [_nghost-bmo-c55] *[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] *[_ngcontent-bmo-c55]:before,
+      [_nghost-bmo-c55] *[_ngcontent-bmo-c55]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c55] h1[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] h2[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] h3[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] h4[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] h5[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] h6[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] ul[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] ol[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] li[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] pre[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] blockquote[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] figure[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] hr[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] p[_ngcontent-bmo-c55] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c55] input[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] textarea[_ngcontent-bmo-c55],
+      [_nghost-bmo-c55] select[_ngcontent-bmo-c55] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      [_nghost-bmo-c55] img[_ngcontent-bmo-c55] {
+        max-width: 100%
+      }
+
+      .tru-core-image-full-width[_nghost-bmo-c55] picture[_ngcontent-bmo-c55] {
+        display: inline-flex
+      }
+
+      .tru-core-image-full-width[_nghost-bmo-c55] picture[_ngcontent-bmo-c55],
+      .tru-core-image-full-width[_nghost-bmo-c55] img[_ngcontent-bmo-c55] {
+        width: 100%;
+        height: auto
+      }
+    
+    
+      [_nghost-bmo-c74] {
+        display: inline-flex
+      }
+
+      .tru-core-cta-wrapper-size-fill[_nghost-bmo-c74] {
+        display: flex;
+        width: 100%
+      }
+
+      [_nghost-bmo-c74] .tru-core-loader-local-loader-wrapper {
+        border-width: var(--truBorderWidthMd) !important;
+        border-radius: var(--truBorderRadiusLg) !important
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c74] {
+        border: none;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background: transparent;
+        font: inherit;
+        line-height: normal;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        -webkit-appearance: none;
+        box-shadow: none;
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: var(--truAnimationDurationBase);
+        transition-timing-function: var(--truAnimationEasingBase);
+        position: relative;
+        transition-property: background-color, border-color;
+        text-align: var(--textAlign);
+        white-space: var(--whiteSpace);
+        border-style: solid
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c74]:focus {
+        outline: none
+      }
+
+      .tru-core-cta-styled[_ngcontent-bmo-c74]:focus-visible:before {
+        content: "";
+        position: absolute;
+        border: 1px solid;
+        border-color: var(--focusBorderColor);
+        inset: var(--focusBorderInset)
+      }
+
+      .tru-core-cta-icon-animate-left[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate-right[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate-down[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate-up[_ngcontent-bmo-c74] {
+        --iconEndGap: var(--truSpacing2xs);
+        transition-property: transform;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:hover .tru-core-cta-icon-animate-left[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:active .tru-core-cta-icon-animate-left[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:focus-visible .tru-core-cta-icon-animate-left[_ngcontent-bmo-c74] {
+        transform: translate(calc(var(--iconEndGap) * -1))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:hover .tru-core-cta-icon-animate-right[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:active .tru-core-cta-icon-animate-right[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:focus-visible .tru-core-cta-icon-animate-right[_ngcontent-bmo-c74] {
+        transform: translate(var(--iconEndGap))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:hover .tru-core-cta-icon-animate-up[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:active .tru-core-cta-icon-animate-up[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:focus-visible .tru-core-cta-icon-animate-up[_ngcontent-bmo-c74] {
+        transform: translateY(calc(var(--iconEndGap) * -1))
+      }
+
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:hover .tru-core-cta-icon-animate-down[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:active .tru-core-cta-icon-animate-down[_ngcontent-bmo-c74],
+      .tru-core-cta-icon-animate[_ngcontent-bmo-c74]:focus-visible .tru-core-cta-icon-animate-down[_ngcontent-bmo-c74] {
+        transform: translateY(var(--iconEndGap))
+      }
+
+      .tru-core-cta-wrapper[_nghost-bmo-c74]>button[_ngcontent-bmo-c74]:disabled,
+      .tru-core-cta-wrapper[_nghost-bmo-c74]>a[_ngcontent-bmo-c74]:disabled {
+        opacity: .66;
+        filter: grayscale(1);
+        pointer-events: none
+      }
+    
+    
+    
+      [_nghost-bmo-c64] {
+        display: flex;
+        flex-direction: row
+      }
+    
+    
+      [_nghost-bmo-c80] {
+        display: flex;
+        font-size: var(--truFontSizeSm);
+        color: var(--truColorStatusErrorContrast)
+      }
+
+      [_nghost-bmo-c80] *[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] *[_ngcontent-bmo-c80]:before,
+      [_nghost-bmo-c80] *[_ngcontent-bmo-c80]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c80] h1[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] h2[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] h3[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] h4[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] h5[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] h6[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] ul[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] ol[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] li[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] pre[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] blockquote[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] figure[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] hr[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] p[_ngcontent-bmo-c80] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c80] input[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] textarea[_ngcontent-bmo-c80],
+      [_nghost-bmo-c80] select[_ngcontent-bmo-c80] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      [_nghost-bmo-c80] .tru-core-icon-wrapper[_ngcontent-bmo-c80] {
+        position: relative;
+        top: 1px
+      }
+    
+    
+      [_nghost-bmo-c102] {
+        --size: 24px;
+        display: block;
+        width: -moz-fit-content;
+        width: fit-content
+      }
+
+      [_nghost-bmo-c102] *[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] *[_ngcontent-bmo-c102]:before,
+      [_nghost-bmo-c102] *[_ngcontent-bmo-c102]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c102] h1[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] h2[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] h3[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] h4[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] h5[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] h6[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] ul[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] ol[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] li[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] pre[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] blockquote[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] figure[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] hr[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] p[_ngcontent-bmo-c102] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c102] input[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] textarea[_ngcontent-bmo-c102],
+      [_nghost-bmo-c102] select[_ngcontent-bmo-c102] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-checkbox-input__wrapper[_ngcontent-bmo-c102] {
+        display: flex;
+        position: relative;
+        align-items: center
+      }
+
+      .tru-core-checkbox__input[_ngcontent-bmo-c102] {
+        margin: 0;
+        flex-shrink: 0;
+        align-self: flex-start;
+        opacity: 0;
+        height: var(--size);
+        width: var(--size);
+        cursor: pointer
+      }
+
+      .tru-core-checkbox__input[_ngcontent-bmo-c102]:where(:checked)+.tru-core-checkbox__custom-input[_ngcontent-bmo-c102] {
+        background-color: var(--truColorFgSelectionStd);
+        border-color: var(--truColorFgSelectionStd);
+        box-shadow: inset 0 0 0 var(--truBorderWidthSm) var(--truColorFgSelectionStd)
+      }
+
+      .tru-core-checkbox__input[_ngcontent-bmo-c102]:where(:checked):active+.tru-core-checkbox__custom-input[_ngcontent-bmo-c102] {
+        background-color: transparent;
+        border-color: var(--truColorFgSelectionActive);
+        box-shadow: inset 0 0 0 var(--truBorderWidthMd) var(--truColorFgSelectionActive)
+      }
+
+      .tru-core-checkbox__input[_ngcontent-bmo-c102]:where(:checked)+.tru-core-checkbox__custom-input[_ngcontent-bmo-c102] .tru-core-icon-wrapper[_ngcontent-bmo-c102] {
+        opacity: 1
+      }
+
+      .tru-core-checkbox__input[_ngcontent-bmo-c102]:where(:not(:checked)):hover+.tru-core-checkbox__custom-input[_ngcontent-bmo-c102],
+      .tru-core-checkbox__input[_ngcontent-bmo-c102]:where(:not(:checked)):focus-visible+.tru-core-checkbox__custom-input[_ngcontent-bmo-c102] {
+        border-color: var(--truColorFgSelectionHover);
+        box-shadow: inset 0 0 0 var(--truBorderWidthMd) var(--truColorFgSelectionHover)
+      }
+
+      .tru-core-checkbox__input[_ngcontent-bmo-c102]:where(:not(:checked)):active+.tru-core-checkbox__custom-input[_ngcontent-bmo-c102] {
+        background-color: var(--truColorFgSelectionActive);
+        border-color: var(--truColorFgSelectionActive);
+        box-shadow: inset 0 0 0 var(--truBorderWidthMd) var(--truColorFgSelectionActive)
+      }
+
+      .tru-core-checkbox__input[_ngcontent-bmo-c102]:where(:focus-visible)+.tru-core-checkbox__custom-input[_ngcontent-bmo-c102]:before {
+        content: "";
+        position: absolute;
+        inset: -3px;
+        border-radius: calc(var(--truBorderRadiusSm) + 1px);
+        box-shadow: 0 0 0 var(--truBorderWidthSm) var(--truColorBorderFocus)
+      }
+
+      .tru-core-checkbox__input[_ngcontent-bmo-c102]:where(:focus-visible):active+.tru-core-checkbox__custom-input[_ngcontent-bmo-c102]:before {
+        display: none
+      }
+
+      .tru-core-checkbox__custom-input[_ngcontent-bmo-c102] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: var(--size);
+        width: var(--size);
+        border-radius: var(--truBorderRadiusSm);
+        border: var(--truBorderWidthSm) solid;
+        border-color: var(--truColorFgSelectionStd);
+        box-shadow: inset 0 0 0 var(--truBorderWidthSm) var(--truColorFgSelectionStd);
+        background-color: transparent;
+        pointer-events: none;
+        transition-property: box-shadow, background-color, border-color;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .tru-core-checkbox__custom-input[_ngcontent-bmo-c102] .tru-core-icon-wrapper[_ngcontent-bmo-c102] {
+        opacity: 0;
+        color: var(--truColorBgStd);
+        transition: opacity var(--truAnimationDurationFast) var(--truAnimationEasingBase)
+      }
+
+      .tru-core-checkbox__label[_ngcontent-bmo-c102] {
+        font-size: var(--truFontSizeMd);
+        font-family: var(--truFontFamilyPrimary);
+        font-weight: var(--truFontWeightRegular);
+        color: var(--truColorFgStd);
+        line-height: var(--truLineHeightMd);
+        display: inline-block;
+        cursor: pointer
+      }
+
+      .tru-core-checkbox__subtext[_ngcontent-bmo-c102] {
+        color: var(--truColorFgStd);
+        margin-left: calc(var(--size) + var(--truSpacingSm))
+      }
+
+      [_nghost-bmo-c102] {
+        opacity: 1;
+        filter: none;
+        transition-property: opacity, filter;
+        transition-duration: var(--truAnimationDurationFast);
+        transition-timing-function: var(--truAnimationEasingBase)
+      }
+
+      .tru-core-checkbox--disabled[_nghost-bmo-c102] {
+        opacity: .66;
+        filter: grayscale(1);
+        pointer-events: none
+      }
+    
+    
+      [_nghost-bmo-c130] {
+        display: flex
+      }
+
+      [_nghost-bmo-c130] *[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] *[_ngcontent-bmo-c130]:before,
+      [_nghost-bmo-c130] *[_ngcontent-bmo-c130]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c130] h1[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] h2[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] h3[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] h4[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] h5[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] h6[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] ul[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] ol[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] li[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] pre[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] blockquote[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] figure[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] hr[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] p[_ngcontent-bmo-c130] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c130] input[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] textarea[_ngcontent-bmo-c130],
+      [_nghost-bmo-c130] select[_ngcontent-bmo-c130] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      .tru-core-form-field-suffix[_ngcontent-bmo-c130] .tru-core-cta-wrapper[_ngcontent-bmo-c130] {
+        height: 100%
+      }
+
+      .tru-core-form-field-suffix-button {
+        border: none;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background: transparent;
+        font: inherit;
+        line-height: normal;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+        -webkit-appearance: none;
+        box-shadow: none;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-left: var(--truSpacingSm);
+        padding-right: var(--truSpacingSm);
+        color: var(--truColorFgActionStd)
+      }
+
+      .tru-core-form-field-suffix-button:hover,
+      .tru-core-form-field-suffix-button:focus-visible {
+        color: var(--truColorFgActionHover)
+      }
+
+      .tru-core-form-field-suffix-button:focus-visible:before {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        border: var(--truBorderWidthSm) solid var(--truColorBorderFocus);
+        border-radius: 3px
+      }
+
+      .tru-core-form-field-suffix-button:focus {
+        outline: none
+      }
+
+      .tru-core-form-field-suffix-button:active {
+        color: var(--truColorFgActionActive)
+      }
+    
+    
+      [_nghost-bmo-c92] {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        height: 100%;
+        color: var(--truColorFgAlt);
+        padding-left: var(--truSpacingSm);
+        padding-right: var(--truSpacingSm)
+      }
+
+      [_nghost-bmo-c92] *[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] *[_ngcontent-bmo-c92]:before,
+      [_nghost-bmo-c92] *[_ngcontent-bmo-c92]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c92] h1[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] h2[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] h3[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] h4[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] h5[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] h6[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] ul[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] ol[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] li[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] pre[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] blockquote[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] figure[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] hr[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] p[_ngcontent-bmo-c92] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c92] input[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] textarea[_ngcontent-bmo-c92],
+      [_nghost-bmo-c92] select[_ngcontent-bmo-c92] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+
+      [_nghost-bmo-c92]:has(.tru-core-cta-wrapper) {
+        height: 100%;
+        padding: 0
+      }
+
+      [_nghost-bmo-c92] tru-core-button-primary button,
+      [_nghost-bmo-c92] tru-core-button-primary a,
+      [_nghost-bmo-c92] tru-core-button-secondary button,
+      [_nghost-bmo-c92] tru-core-button-secondary a,
+      [_nghost-bmo-c92] tru-core-button-tertiary button,
+      [_nghost-bmo-c92] tru-core-button-tertiary a,
+      [_nghost-bmo-c92] tru-core-button-level button,
+      [_nghost-bmo-c92] tru-core-button-level a,
+      [_nghost-bmo-c92] tru-core-button-text button,
+      [_nghost-bmo-c92] tru-core-button-text a,
+      [_nghost-bmo-c92] tru-core-link-primary button,
+      [_nghost-bmo-c92] tru-core-link-primary a,
+      [_nghost-bmo-c92] tru-core-link-secondary button,
+      [_nghost-bmo-c92] tru-core-link-secondary a,
+      [_nghost-bmo-c92] tru-core-link-tertiary button,
+      [_nghost-bmo-c92] tru-core-link-tertiary a,
+      [_nghost-bmo-c92] tru-core-link-level button,
+      [_nghost-bmo-c92] tru-core-link-level a,
+      [_nghost-bmo-c92] tru-core-link-text button,
+      [_nghost-bmo-c92] tru-core-link-text a {
+        border-radius: 0 !important;
+        padding-left: var(--truSpacingMd) !important;
+        padding-right: var(--truSpacingMd) !important
+      }
+    
+    
+      [_nghost-bmo-c106] {
+        display: block;
+        padding: 0 var(--truSpacingMd) var(--truSpacingMd) var(--truSpacingMd)
+      }
+
+      [_nghost-bmo-c106] *[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] *[_ngcontent-bmo-c106]:before,
+      [_nghost-bmo-c106] *[_ngcontent-bmo-c106]:after {
+        box-sizing: border-box
+      }
+
+      [_nghost-bmo-c106] h1[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] h2[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] h3[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] h4[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] h5[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] h6[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] ul[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] ol[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] li[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] pre[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] blockquote[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] figure[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] hr[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] p[_ngcontent-bmo-c106] {
+        margin: 0;
+        padding: 0
+      }
+
+      [_nghost-bmo-c106] input[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] textarea[_ngcontent-bmo-c106],
+      [_nghost-bmo-c106] select[_ngcontent-bmo-c106] {
+        font: inherit;
+        letter-spacing: inherit
+      }
+    
+      #onetrust-banner-sdk {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+      }
+
+      #onetrust-banner-sdk .onetrust-vendors-list-handler {
+        cursor: pointer;
+        color: #1f96db;
+        font-size: inherit;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 5px
+      }
+
+      #onetrust-banner-sdk .onetrust-vendors-list-handler:hover {
+        color: #1f96db
+      }
+
+      #onetrust-banner-sdk:focus {
+        outline: 2px solid #000;
+        outline-offset: -2px
+      }
+
+      #onetrust-banner-sdk a:focus {
+        outline: 2px solid #000
+      }
+
+      #onetrust-banner-sdk #onetrust-accept-btn-handler,
+      #onetrust-banner-sdk #onetrust-reject-all-handler,
+      #onetrust-banner-sdk #onetrust-pc-btn-handler {
+        outline-offset: 1px
+      }
+
+      #onetrust-banner-sdk.ot-bnr-w-logo .ot-bnr-logo {
+        height: 64px;
+        width: 64px
+      }
+
+      #onetrust-banner-sdk .ot-close-icon,
+      #onetrust-pc-sdk .ot-close-icon,
+      #ot-sync-ntfy .ot-close-icon {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 12px;
+        width: 12px
+      }
+
+      #onetrust-banner-sdk .powered-by-logo,
+      #onetrust-banner-sdk .ot-pc-footer-logo a,
+      #onetrust-pc-sdk .powered-by-logo,
+      #onetrust-pc-sdk .ot-pc-footer-logo a,
+      #ot-sync-ntfy .powered-by-logo,
+      #ot-sync-ntfy .ot-pc-footer-logo a {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 25px;
+        width: 152px;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75em
+      }
+
+      #onetrust-banner-sdk .powered-by-logo:hover,
+      #onetrust-banner-sdk .ot-pc-footer-logo a:hover,
+      #onetrust-pc-sdk .powered-by-logo:hover,
+      #onetrust-pc-sdk .ot-pc-footer-logo a:hover,
+      #ot-sync-ntfy .powered-by-logo:hover,
+      #ot-sync-ntfy .ot-pc-footer-logo a:hover {
+        color: #565656
+      }
+
+      #onetrust-banner-sdk h3 *,
+      #onetrust-banner-sdk h4 *,
+      #onetrust-banner-sdk h6 *,
+      #onetrust-banner-sdk button *,
+      #onetrust-banner-sdk a[data-parent-id] *,
+      #onetrust-pc-sdk h3 *,
+      #onetrust-pc-sdk h4 *,
+      #onetrust-pc-sdk h6 *,
+      #onetrust-pc-sdk button *,
+      #onetrust-pc-sdk a[data-parent-id] *,
+      #ot-sync-ntfy h3 *,
+      #ot-sync-ntfy h4 *,
+      #ot-sync-ntfy h6 *,
+      #ot-sync-ntfy button *,
+      #ot-sync-ntfy a[data-parent-id] * {
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit
+      }
+
+      #onetrust-banner-sdk .ot-hide,
+      #onetrust-pc-sdk .ot-hide,
+      #ot-sync-ntfy .ot-hide {
+        display: none !important
+      }
+
+      #onetrust-banner-sdk button.ot-link-btn:hover,
+      #onetrust-pc-sdk button.ot-link-btn:hover,
+      #ot-sync-ntfy button.ot-link-btn:hover {
+        text-decoration: underline;
+        opacity: 1
+      }
+
+      #onetrust-pc-sdk .ot-sdk-row .ot-sdk-column {
+        padding: 0
+      }
+
+      #onetrust-pc-sdk .ot-sdk-container {
+        padding-right: 0
+      }
+
+      #onetrust-pc-sdk .ot-sdk-row {
+        flex-direction: initial;
+        width: 100%
+      }
+
+      #onetrust-pc-sdk [type="checkbox"]:checked,
+      #onetrust-pc-sdk [type="checkbox"]:not(:checked) {
+        pointer-events: initial
+      }
+
+      #onetrust-pc-sdk [type="checkbox"]:disabled+label::before,
+      #onetrust-pc-sdk [type="checkbox"]:disabled+label:after,
+      #onetrust-pc-sdk [type="checkbox"]:disabled+label {
+        pointer-events: none;
+        opacity: 0.7
+      }
+
+      #onetrust-pc-sdk #vendor-list-content {
+        transform: translate3d(0, 0, 0)
+      }
+
+      #onetrust-pc-sdk li input[type="checkbox"] {
+        z-index: 1
+      }
+
+      #onetrust-pc-sdk li .ot-checkbox label {
+        z-index: 2
+      }
+
+      #onetrust-pc-sdk li .ot-checkbox input[type="checkbox"] {
+        height: auto;
+        width: auto
+      }
+
+      #onetrust-pc-sdk li .host-title a,
+      #onetrust-pc-sdk li .ot-host-name a,
+      #onetrust-pc-sdk li .accordion-text,
+      #onetrust-pc-sdk li .ot-acc-txt {
+        z-index: 2;
+        position: relative
+      }
+
+      #onetrust-pc-sdk input {
+        margin: 3px 0.1ex
+      }
+
+      #onetrust-pc-sdk .pc-logo,
+      #onetrust-pc-sdk .ot-pc-logo {
+        height: 60px;
+        width: 180px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center
+      }
+
+      #onetrust-pc-sdk .pc-logo img,
+      #onetrust-pc-sdk .ot-pc-logo img {
+        max-height: 100%;
+        max-width: 100%
+      }
+
+      #onetrust-pc-sdk .screen-reader-only,
+      #onetrust-pc-sdk .ot-scrn-rdr,
+      .ot-sdk-cookie-policy .screen-reader-only,
+      .ot-sdk-cookie-policy .ot-scrn-rdr {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px
+      }
+
+      #onetrust-pc-sdk.ot-fade-in,
+      .onetrust-pc-dark-filter.ot-fade-in,
+      #onetrust-banner-sdk.ot-fade-in {
+        animation-name: onetrust-fade-in;
+        animation-duration: 400ms;
+        animation-timing-function: ease-in-out
+      }
+
+      #onetrust-pc-sdk.ot-hide {
+        display: none !important
+      }
+
+      .onetrust-pc-dark-filter.ot-hide {
+        display: none !important
+      }
+
+      #ot-sdk-btn.ot-sdk-show-settings,
+      #ot-sdk-btn.optanon-show-settings {
+        color: #68b631;
+        border: 1px solid #68b631;
+        height: auto;
+        white-space: normal;
+        word-wrap: break-word;
+        padding: 0.8em 2em;
+        font-size: 0.8em;
+        line-height: 1.2;
+        cursor: pointer;
+        -moz-transition: 0.1s ease;
+        -o-transition: 0.1s ease;
+        -webkit-transition: 1s ease;
+        transition: 0.1s ease
+      }
+
+      #ot-sdk-btn.ot-sdk-show-settings:hover,
+      #ot-sdk-btn.optanon-show-settings:hover {
+        color: #fff;
+        background-color: #68b631
+      }
+
+      .onetrust-pc-dark-filter {
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2147483646;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0
+      }
+
+      @keyframes onetrust-fade-in {
+        0% {
+          opacity: 0
+        }
+
+        100% {
+          opacity: 1
+        }
+      }
+
+      .ot-cookie-label {
+        text-decoration: underline
+      }
+
+      @media only screen and (min-width: 426px) and (max-width: 896px) and (orientation: landscape) {
+        #onetrust-pc-sdk p {
+          font-size: 0.75em
+        }
+      }
+
+      #onetrust-banner-sdk .banner-option-input:focus+label {
+        outline: 1px solid #000;
+        outline-style: auto
+      }
+
+      .category-vendors-list-handler+a:focus,
+      .category-vendors-list-handler+a:focus-visible {
+        outline: 2px solid #000
+      }
+
+      #onetrust-pc-sdk .ot-userid-title {
+        margin-top: 10px
+      }
+
+      #onetrust-pc-sdk .ot-userid-title>span,
+      #onetrust-pc-sdk .ot-userid-timestamp>span {
+        font-weight: 700
+      }
+
+      #onetrust-pc-sdk .ot-userid-desc {
+        font-style: italic
+      }
+
+      #onetrust-pc-sdk .ot-host-desc a {
+        pointer-events: initial
+      }
+
+      #onetrust-pc-sdk .ot-ven-hdr>p a {
+        position: relative;
+        z-index: 2;
+        pointer-events: initial
+      }
+
+      #onetrust-pc-sdk .ot-vnd-serv .ot-vnd-item .ot-vnd-info a,
+      #onetrust-pc-sdk .ot-vs-list .ot-vnd-item .ot-vnd-info a {
+        margin-right: auto
+      }
+
+      #onetrust-pc-sdk .ot-pc-footer-logo img {
+        width: 136px;
+        height: 16px
+      }
+
+      #onetrust-banner-sdk .ot-optout-signal,
+      #onetrust-pc-sdk .ot-optout-signal {
+        border: 1px solid #32ae88;
+        border-radius: 3px;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #f9fffa;
+        font-size: 0.85rem;
+        line-height: 2
+      }
+
+      #onetrust-banner-sdk .ot-optout-signal .ot-optout-icon,
+      #onetrust-pc-sdk .ot-optout-signal .ot-optout-icon {
+        display: inline;
+        margin-right: 5px
+      }
+
+      #onetrust-banner-sdk .ot-optout-signal svg,
+      #onetrust-pc-sdk .ot-optout-signal svg {
+        height: 20px;
+        width: 30px;
+        transform: scale(0.5)
+      }
+
+      #onetrust-banner-sdk .ot-optout-signal svg path,
+      #onetrust-pc-sdk .ot-optout-signal svg path {
+        fill: #32ae88
+      }
+
+      #onetrust-banner-sdk,
+      #onetrust-pc-sdk,
+      #ot-sdk-cookie-policy,
+      #ot-sync-ntfy {
+        font-size: 16px
+      }
+
+      #onetrust-banner-sdk *,
+      #onetrust-banner-sdk ::after,
+      #onetrust-banner-sdk ::before,
+      #onetrust-pc-sdk *,
+      #onetrust-pc-sdk ::after,
+      #onetrust-pc-sdk ::before,
+      #ot-sdk-cookie-policy *,
+      #ot-sdk-cookie-policy ::after,
+      #ot-sdk-cookie-policy ::before,
+      #ot-sync-ntfy *,
+      #ot-sync-ntfy ::after,
+      #ot-sync-ntfy ::before {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box
+      }
+
+      #onetrust-banner-sdk div,
+      #onetrust-banner-sdk span,
+      #onetrust-banner-sdk h1,
+      #onetrust-banner-sdk h2,
+      #onetrust-banner-sdk h3,
+      #onetrust-banner-sdk h4,
+      #onetrust-banner-sdk h5,
+      #onetrust-banner-sdk h6,
+      #onetrust-banner-sdk p,
+      #onetrust-banner-sdk img,
+      #onetrust-banner-sdk svg,
+      #onetrust-banner-sdk button,
+      #onetrust-banner-sdk section,
+      #onetrust-banner-sdk a,
+      #onetrust-banner-sdk label,
+      #onetrust-banner-sdk input,
+      #onetrust-banner-sdk ul,
+      #onetrust-banner-sdk li,
+      #onetrust-banner-sdk nav,
+      #onetrust-banner-sdk table,
+      #onetrust-banner-sdk thead,
+      #onetrust-banner-sdk tr,
+      #onetrust-banner-sdk td,
+      #onetrust-banner-sdk tbody,
+      #onetrust-banner-sdk .ot-main-content,
+      #onetrust-banner-sdk .ot-toggle,
+      #onetrust-banner-sdk #ot-content,
+      #onetrust-banner-sdk #ot-pc-content,
+      #onetrust-banner-sdk .checkbox,
+      #onetrust-pc-sdk div,
+      #onetrust-pc-sdk span,
+      #onetrust-pc-sdk h1,
+      #onetrust-pc-sdk h2,
+      #onetrust-pc-sdk h3,
+      #onetrust-pc-sdk h4,
+      #onetrust-pc-sdk h5,
+      #onetrust-pc-sdk h6,
+      #onetrust-pc-sdk p,
+      #onetrust-pc-sdk img,
+      #onetrust-pc-sdk svg,
+      #onetrust-pc-sdk button,
+      #onetrust-pc-sdk section,
+      #onetrust-pc-sdk a,
+      #onetrust-pc-sdk label,
+      #onetrust-pc-sdk input,
+      #onetrust-pc-sdk ul,
+      #onetrust-pc-sdk li,
+      #onetrust-pc-sdk nav,
+      #onetrust-pc-sdk table,
+      #onetrust-pc-sdk thead,
+      #onetrust-pc-sdk tr,
+      #onetrust-pc-sdk td,
+      #onetrust-pc-sdk tbody,
+      #onetrust-pc-sdk .ot-main-content,
+      #onetrust-pc-sdk .ot-toggle,
+      #onetrust-pc-sdk #ot-content,
+      #onetrust-pc-sdk #ot-pc-content,
+      #onetrust-pc-sdk .checkbox,
+      #ot-sdk-cookie-policy div,
+      #ot-sdk-cookie-policy span,
+      #ot-sdk-cookie-policy h1,
+      #ot-sdk-cookie-policy h2,
+      #ot-sdk-cookie-policy h3,
+      #ot-sdk-cookie-policy h4,
+      #ot-sdk-cookie-policy h5,
+      #ot-sdk-cookie-policy h6,
+      #ot-sdk-cookie-policy p,
+      #ot-sdk-cookie-policy img,
+      #ot-sdk-cookie-policy svg,
+      #ot-sdk-cookie-policy button,
+      #ot-sdk-cookie-policy section,
+      #ot-sdk-cookie-policy a,
+      #ot-sdk-cookie-policy label,
+      #ot-sdk-cookie-policy input,
+      #ot-sdk-cookie-policy ul,
+      #ot-sdk-cookie-policy li,
+      #ot-sdk-cookie-policy nav,
+      #ot-sdk-cookie-policy table,
+      #ot-sdk-cookie-policy thead,
+      #ot-sdk-cookie-policy tr,
+      #ot-sdk-cookie-policy td,
+      #ot-sdk-cookie-policy tbody,
+      #ot-sdk-cookie-policy .ot-main-content,
+      #ot-sdk-cookie-policy .ot-toggle,
+      #ot-sdk-cookie-policy #ot-content,
+      #ot-sdk-cookie-policy #ot-pc-content,
+      #ot-sdk-cookie-policy .checkbox,
+      #ot-sync-ntfy div,
+      #ot-sync-ntfy span,
+      #ot-sync-ntfy h1,
+      #ot-sync-ntfy h2,
+      #ot-sync-ntfy h3,
+      #ot-sync-ntfy h4,
+      #ot-sync-ntfy h5,
+      #ot-sync-ntfy h6,
+      #ot-sync-ntfy p,
+      #ot-sync-ntfy img,
+      #ot-sync-ntfy svg,
+      #ot-sync-ntfy button,
+      #ot-sync-ntfy section,
+      #ot-sync-ntfy a,
+      #ot-sync-ntfy label,
+      #ot-sync-ntfy input,
+      #ot-sync-ntfy ul,
+      #ot-sync-ntfy li,
+      #ot-sync-ntfy nav,
+      #ot-sync-ntfy table,
+      #ot-sync-ntfy thead,
+      #ot-sync-ntfy tr,
+      #ot-sync-ntfy td,
+      #ot-sync-ntfy tbody,
+      #ot-sync-ntfy .ot-main-content,
+      #ot-sync-ntfy .ot-toggle,
+      #ot-sync-ntfy #ot-content,
+      #ot-sync-ntfy #ot-pc-content,
+      #ot-sync-ntfy .checkbox {
+        font-family: inherit;
+        font-weight: normal;
+        -webkit-font-smoothing: auto;
+        letter-spacing: normal;
+        line-height: normal;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        width: auto;
+        min-width: 0;
+        max-width: none;
+        border-radius: 0;
+        border: none;
+        clear: none;
+        float: none;
+        position: static;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        top: auto;
+        text-align: left;
+        text-decoration: none;
+        text-indent: 0;
+        text-shadow: none;
+        text-transform: none;
+        white-space: normal;
+        background: none;
+        overflow: visible;
+        vertical-align: baseline;
+        visibility: visible;
+        z-index: auto;
+        box-shadow: none
+      }
+
+      #onetrust-banner-sdk label:before,
+      #onetrust-banner-sdk label:after,
+      #onetrust-banner-sdk .checkbox:after,
+      #onetrust-banner-sdk .checkbox:before,
+      #onetrust-pc-sdk label:before,
+      #onetrust-pc-sdk label:after,
+      #onetrust-pc-sdk .checkbox:after,
+      #onetrust-pc-sdk .checkbox:before,
+      #ot-sdk-cookie-policy label:before,
+      #ot-sdk-cookie-policy label:after,
+      #ot-sdk-cookie-policy .checkbox:after,
+      #ot-sdk-cookie-policy .checkbox:before,
+      #ot-sync-ntfy label:before,
+      #ot-sync-ntfy label:after,
+      #ot-sync-ntfy .checkbox:after,
+      #ot-sync-ntfy .checkbox:before {
+        content: "";
+        content: none
+      }
+
+      #onetrust-banner-sdk .ot-sdk-container,
+      #onetrust-pc-sdk .ot-sdk-container,
+      #ot-sdk-cookie-policy .ot-sdk-container {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box
+      }
+
+      #onetrust-banner-sdk .ot-sdk-column,
+      #onetrust-banner-sdk .ot-sdk-columns,
+      #onetrust-pc-sdk .ot-sdk-column,
+      #onetrust-pc-sdk .ot-sdk-columns,
+      #ot-sdk-cookie-policy .ot-sdk-column,
+      #ot-sdk-cookie-policy .ot-sdk-columns {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        padding: 0;
+        display: initial
+      }
+
+      @media (min-width: 400px) {
+
+        #onetrust-banner-sdk .ot-sdk-container,
+        #onetrust-pc-sdk .ot-sdk-container,
+        #ot-sdk-cookie-policy .ot-sdk-container {
+          width: 90%;
+          padding: 0
+        }
+      }
+
+      @media (min-width: 550px) {
+
+        #onetrust-banner-sdk .ot-sdk-container,
+        #onetrust-pc-sdk .ot-sdk-container,
+        #ot-sdk-cookie-policy .ot-sdk-container {
+          width: 100%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-column,
+        #onetrust-banner-sdk .ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-column,
+        #onetrust-pc-sdk .ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-column,
+        #ot-sdk-cookie-policy .ot-sdk-columns {
+          margin-left: 4%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-column:first-child,
+        #onetrust-banner-sdk .ot-sdk-columns:first-child,
+        #onetrust-pc-sdk .ot-sdk-column:first-child,
+        #onetrust-pc-sdk .ot-sdk-columns:first-child,
+        #ot-sdk-cookie-policy .ot-sdk-column:first-child,
+        #ot-sdk-cookie-policy .ot-sdk-columns:first-child {
+          margin-left: 0
+        }
+
+        #onetrust-banner-sdk .ot-sdk-two.ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-two.ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-two.ot-sdk-columns {
+          width: 13.3333333333%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-three.ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-three.ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-three.ot-sdk-columns {
+          width: 22%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-four.ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-four.ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-four.ot-sdk-columns {
+          width: 30.6666666667%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-eight.ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-eight.ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-eight.ot-sdk-columns {
+          width: 65.3333333333%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-nine.ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-nine.ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-nine.ot-sdk-columns {
+          width: 74%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-ten.ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-ten.ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-ten.ot-sdk-columns {
+          width: 82.6666666667%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-eleven.ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-eleven.ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-eleven.ot-sdk-columns {
+          width: 91.3333333333%
+        }
+
+        #onetrust-banner-sdk .ot-sdk-twelve.ot-sdk-columns,
+        #onetrust-pc-sdk .ot-sdk-twelve.ot-sdk-columns,
+        #ot-sdk-cookie-policy .ot-sdk-twelve.ot-sdk-columns {
+          width: 100%;
+          margin-left: 0
+        }
+      }
+
+      #onetrust-banner-sdk h1,
+      #onetrust-banner-sdk h2,
+      #onetrust-banner-sdk h3,
+      #onetrust-banner-sdk h4,
+      #onetrust-banner-sdk h5,
+      #onetrust-banner-sdk h6,
+      #onetrust-pc-sdk h1,
+      #onetrust-pc-sdk h2,
+      #onetrust-pc-sdk h3,
+      #onetrust-pc-sdk h4,
+      #onetrust-pc-sdk h5,
+      #onetrust-pc-sdk h6,
+      #ot-sdk-cookie-policy h1,
+      #ot-sdk-cookie-policy h2,
+      #ot-sdk-cookie-policy h3,
+      #ot-sdk-cookie-policy h4,
+      #ot-sdk-cookie-policy h5,
+      #ot-sdk-cookie-policy h6 {
+        margin-top: 0;
+        font-weight: 600;
+        font-family: inherit
+      }
+
+      #onetrust-banner-sdk h1,
+      #onetrust-pc-sdk h1,
+      #ot-sdk-cookie-policy h1 {
+        font-size: 1.5rem;
+        line-height: 1.2
+      }
+
+      #onetrust-banner-sdk h2,
+      #onetrust-pc-sdk h2,
+      #ot-sdk-cookie-policy h2 {
+        font-size: 1.5rem;
+        line-height: 1.25
+      }
+
+      #onetrust-banner-sdk h3,
+      #onetrust-pc-sdk h3,
+      #ot-sdk-cookie-policy h3 {
+        font-size: 1.5rem;
+        line-height: 1.3
+      }
+
+      #onetrust-banner-sdk h4,
+      #onetrust-pc-sdk h4,
+      #ot-sdk-cookie-policy h4 {
+        font-size: 1.5rem;
+        line-height: 1.35
+      }
+
+      #onetrust-banner-sdk h5,
+      #onetrust-pc-sdk h5,
+      #ot-sdk-cookie-policy h5 {
+        font-size: 1.5rem;
+        line-height: 1.5
+      }
+
+      #onetrust-banner-sdk h6,
+      #onetrust-pc-sdk h6,
+      #ot-sdk-cookie-policy h6 {
+        font-size: 1.5rem;
+        line-height: 1.6
+      }
+
+      @media (min-width: 550px) {
+
+        #onetrust-banner-sdk h1,
+        #onetrust-pc-sdk h1,
+        #ot-sdk-cookie-policy h1 {
+          font-size: 1.5rem
+        }
+
+        #onetrust-banner-sdk h2,
+        #onetrust-pc-sdk h2,
+        #ot-sdk-cookie-policy h2 {
+          font-size: 1.5rem
+        }
+
+        #onetrust-banner-sdk h3,
+        #onetrust-pc-sdk h3,
+        #ot-sdk-cookie-policy h3 {
+          font-size: 1.5rem
+        }
+
+        #onetrust-banner-sdk h4,
+        #onetrust-pc-sdk h4,
+        #ot-sdk-cookie-policy h4 {
+          font-size: 1.5rem
+        }
+
+        #onetrust-banner-sdk h5,
+        #onetrust-pc-sdk h5,
+        #ot-sdk-cookie-policy h5 {
+          font-size: 1.5rem
+        }
+
+        #onetrust-banner-sdk h6,
+        #onetrust-pc-sdk h6,
+        #ot-sdk-cookie-policy h6 {
+          font-size: 1.5rem
+        }
+      }
+
+      #onetrust-banner-sdk p,
+      #onetrust-pc-sdk p,
+      #ot-sdk-cookie-policy p {
+        margin: 0 0 1em 0;
+        font-family: inherit;
+        line-height: normal
+      }
+
+      #onetrust-banner-sdk a,
+      #onetrust-pc-sdk a,
+      #ot-sdk-cookie-policy a {
+        color: #565656;
+        text-decoration: underline
+      }
+
+      #onetrust-banner-sdk a:hover,
+      #onetrust-pc-sdk a:hover,
+      #ot-sdk-cookie-policy a:hover {
+        color: #565656;
+        text-decoration: none
+      }
+
+      #onetrust-banner-sdk .ot-sdk-button,
+      #onetrust-banner-sdk button,
+      #onetrust-pc-sdk .ot-sdk-button,
+      #onetrust-pc-sdk button,
+      #ot-sdk-cookie-policy .ot-sdk-button,
+      #ot-sdk-cookie-policy button {
+        margin-bottom: 1rem;
+        font-family: inherit
+      }
+
+      #onetrust-banner-sdk .ot-sdk-button,
+      #onetrust-banner-sdk button,
+      #onetrust-pc-sdk .ot-sdk-button,
+      #onetrust-pc-sdk button,
+      #ot-sdk-cookie-policy .ot-sdk-button,
+      #ot-sdk-cookie-policy button {
+        display: inline-block;
+        height: 38px;
+        padding: 0 30px;
+        color: #555;
+        text-align: center;
+        font-size: 0.9em;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0.01em;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border-radius: 2px;
+        border: 1px solid #bbb;
+        cursor: pointer;
+        box-sizing: border-box
+      }
+
+      #onetrust-banner-sdk .ot-sdk-button:hover,
+      #onetrust-banner-sdk :not(.ot-leg-btn-container)>button:not(.ot-link-btn):hover,
+      #onetrust-banner-sdk :not(.ot-leg-btn-container)>button:not(.ot-link-btn):focus,
+      #onetrust-pc-sdk .ot-sdk-button:hover,
+      #onetrust-pc-sdk :not(.ot-leg-btn-container)>button:not(.ot-link-btn):hover,
+      #onetrust-pc-sdk :not(.ot-leg-btn-container)>button:not(.ot-link-btn):focus,
+      #ot-sdk-cookie-policy .ot-sdk-button:hover,
+      #ot-sdk-cookie-policy :not(.ot-leg-btn-container)>button:not(.ot-link-btn):hover,
+      #ot-sdk-cookie-policy :not(.ot-leg-btn-container)>button:not(.ot-link-btn):focus {
+        color: #333;
+        border-color: #888;
+        opacity: 0.7
+      }
+
+      #onetrust-banner-sdk .ot-sdk-button:focus,
+      #onetrust-banner-sdk :not(.ot-leg-btn-container)>button:focus,
+      #onetrust-pc-sdk .ot-sdk-button:focus,
+      #onetrust-pc-sdk :not(.ot-leg-btn-container)>button:focus,
+      #ot-sdk-cookie-policy .ot-sdk-button:focus,
+      #ot-sdk-cookie-policy :not(.ot-leg-btn-container)>button:focus {
+        outline: 2px solid #000
+      }
+
+      #onetrust-banner-sdk .ot-sdk-button.ot-sdk-button-primary,
+      #onetrust-banner-sdk button.ot-sdk-button-primary,
+      #onetrust-banner-sdk input[type="submit"].ot-sdk-button-primary,
+      #onetrust-banner-sdk input[type="reset"].ot-sdk-button-primary,
+      #onetrust-banner-sdk input[type="button"].ot-sdk-button-primary,
+      #onetrust-pc-sdk .ot-sdk-button.ot-sdk-button-primary,
+      #onetrust-pc-sdk button.ot-sdk-button-primary,
+      #onetrust-pc-sdk input[type="submit"].ot-sdk-button-primary,
+      #onetrust-pc-sdk input[type="reset"].ot-sdk-button-primary,
+      #onetrust-pc-sdk input[type="button"].ot-sdk-button-primary,
+      #ot-sdk-cookie-policy .ot-sdk-button.ot-sdk-button-primary,
+      #ot-sdk-cookie-policy button.ot-sdk-button-primary,
+      #ot-sdk-cookie-policy input[type="submit"].ot-sdk-button-primary,
+      #ot-sdk-cookie-policy input[type="reset"].ot-sdk-button-primary,
+      #ot-sdk-cookie-policy input[type="button"].ot-sdk-button-primary {
+        color: #fff;
+        background-color: #33c3f0;
+        border-color: #33c3f0
+      }
+
+      #onetrust-banner-sdk .ot-sdk-button.ot-sdk-button-primary:hover,
+      #onetrust-banner-sdk button.ot-sdk-button-primary:hover,
+      #onetrust-banner-sdk input[type="submit"].ot-sdk-button-primary:hover,
+      #onetrust-banner-sdk input[type="reset"].ot-sdk-button-primary:hover,
+      #onetrust-banner-sdk input[type="button"].ot-sdk-button-primary:hover,
+      #onetrust-banner-sdk .ot-sdk-button.ot-sdk-button-primary:focus,
+      #onetrust-banner-sdk button.ot-sdk-button-primary:focus,
+      #onetrust-banner-sdk input[type="submit"].ot-sdk-button-primary:focus,
+      #onetrust-banner-sdk input[type="reset"].ot-sdk-button-primary:focus,
+      #onetrust-banner-sdk input[type="button"].ot-sdk-button-primary:focus,
+      #onetrust-pc-sdk .ot-sdk-button.ot-sdk-button-primary:hover,
+      #onetrust-pc-sdk button.ot-sdk-button-primary:hover,
+      #onetrust-pc-sdk input[type="submit"].ot-sdk-button-primary:hover,
+      #onetrust-pc-sdk input[type="reset"].ot-sdk-button-primary:hover,
+      #onetrust-pc-sdk input[type="button"].ot-sdk-button-primary:hover,
+      #onetrust-pc-sdk .ot-sdk-button.ot-sdk-button-primary:focus,
+      #onetrust-pc-sdk button.ot-sdk-button-primary:focus,
+      #onetrust-pc-sdk input[type="submit"].ot-sdk-button-primary:focus,
+      #onetrust-pc-sdk input[type="reset"].ot-sdk-button-primary:focus,
+      #onetrust-pc-sdk input[type="button"].ot-sdk-button-primary:focus,
+      #ot-sdk-cookie-policy .ot-sdk-button.ot-sdk-button-primary:hover,
+      #ot-sdk-cookie-policy button.ot-sdk-button-primary:hover,
+      #ot-sdk-cookie-policy input[type="submit"].ot-sdk-button-primary:hover,
+      #ot-sdk-cookie-policy input[type="reset"].ot-sdk-button-primary:hover,
+      #ot-sdk-cookie-policy input[type="button"].ot-sdk-button-primary:hover,
+      #ot-sdk-cookie-policy .ot-sdk-button.ot-sdk-button-primary:focus,
+      #ot-sdk-cookie-policy button.ot-sdk-button-primary:focus,
+      #ot-sdk-cookie-policy input[type="submit"].ot-sdk-button-primary:focus,
+      #ot-sdk-cookie-policy input[type="reset"].ot-sdk-button-primary:focus,
+      #ot-sdk-cookie-policy input[type="button"].ot-sdk-button-primary:focus {
+        color: #fff;
+        background-color: #1eaedb;
+        border-color: #1eaedb
+      }
+
+      #onetrust-banner-sdk input[type="text"],
+      #onetrust-pc-sdk input[type="text"],
+      #ot-sdk-cookie-policy input[type="text"] {
+        height: 38px;
+        padding: 6px 10px;
+        background-color: #fff;
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+        box-shadow: none;
+        box-sizing: border-box
+      }
+
+      #onetrust-banner-sdk input[type="text"],
+      #onetrust-pc-sdk input[type="text"],
+      #ot-sdk-cookie-policy input[type="text"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none
+      }
+
+      #onetrust-banner-sdk input[type="text"]:focus,
+      #onetrust-pc-sdk input[type="text"]:focus,
+      #ot-sdk-cookie-policy input[type="text"]:focus {
+        border: 1px solid #000;
+        outline: 0
+      }
+
+      #onetrust-banner-sdk label,
+      #onetrust-pc-sdk label,
+      #ot-sdk-cookie-policy label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600
+      }
+
+      #onetrust-banner-sdk input[type="checkbox"],
+      #onetrust-pc-sdk input[type="checkbox"],
+      #ot-sdk-cookie-policy input[type="checkbox"] {
+        display: inline
+      }
+
+      #onetrust-banner-sdk ul,
+      #onetrust-pc-sdk ul,
+      #ot-sdk-cookie-policy ul {
+        list-style: circle inside
+      }
+
+      #onetrust-banner-sdk ul,
+      #onetrust-pc-sdk ul,
+      #ot-sdk-cookie-policy ul {
+        padding-left: 0;
+        margin-top: 0
+      }
+
+      #onetrust-banner-sdk ul ul,
+      #onetrust-pc-sdk ul ul,
+      #ot-sdk-cookie-policy ul ul {
+        margin: 1.5rem 0 1.5rem 3rem;
+        font-size: 90%
+      }
+
+      #onetrust-banner-sdk li,
+      #onetrust-pc-sdk li,
+      #ot-sdk-cookie-policy li {
+        margin-bottom: 1rem
+      }
+
+      #onetrust-banner-sdk th,
+      #onetrust-banner-sdk td,
+      #onetrust-pc-sdk th,
+      #onetrust-pc-sdk td,
+      #ot-sdk-cookie-policy th,
+      #ot-sdk-cookie-policy td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #e1e1e1
+      }
+
+      #onetrust-banner-sdk button,
+      #onetrust-pc-sdk button,
+      #ot-sdk-cookie-policy button {
+        margin-bottom: 1rem;
+        font-family: inherit
+      }
+
+      #onetrust-banner-sdk .ot-sdk-container:after,
+      #onetrust-banner-sdk .ot-sdk-row:after,
+      #onetrust-pc-sdk .ot-sdk-container:after,
+      #onetrust-pc-sdk .ot-sdk-row:after,
+      #ot-sdk-cookie-policy .ot-sdk-container:after,
+      #ot-sdk-cookie-policy .ot-sdk-row:after {
+        content: "";
+        display: table;
+        clear: both
+      }
+
+      #onetrust-banner-sdk .ot-sdk-row,
+      #onetrust-pc-sdk .ot-sdk-row,
+      #ot-sdk-cookie-policy .ot-sdk-row {
+        margin: 0;
+        max-width: none;
+        display: block
+      }
+
+      .ot-sdk-cookie-policy {
+        font-family: inherit;
+        font-size: 16px
+      }
+
+      .ot-sdk-cookie-policy.otRelFont {
+        font-size: 1rem
+      }
+
+      .ot-sdk-cookie-policy h3,
+      .ot-sdk-cookie-policy h4,
+      .ot-sdk-cookie-policy h6,
+      .ot-sdk-cookie-policy p,
+      .ot-sdk-cookie-policy li,
+      .ot-sdk-cookie-policy a,
+      .ot-sdk-cookie-policy th,
+      .ot-sdk-cookie-policy #cookie-policy-description,
+      .ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,
+      .ot-sdk-cookie-policy #cookie-policy-title {
+        color: dimgray
+      }
+
+      .ot-sdk-cookie-policy #cookie-policy-description {
+        margin-bottom: 1em
+      }
+
+      .ot-sdk-cookie-policy h4 {
+        font-size: 1.2em
+      }
+
+      .ot-sdk-cookie-policy h6 {
+        font-size: 1em;
+        margin-top: 2em
+      }
+
+      .ot-sdk-cookie-policy th {
+        min-width: 75px
+      }
+
+      .ot-sdk-cookie-policy a,
+      .ot-sdk-cookie-policy a:hover {
+        background: #fff
+      }
+
+      .ot-sdk-cookie-policy thead {
+        background-color: #f6f6f4;
+        font-weight: bold
+      }
+
+      .ot-sdk-cookie-policy .ot-mobile-border {
+        display: none
+      }
+
+      .ot-sdk-cookie-policy section {
+        margin-bottom: 2em
+      }
+
+      .ot-sdk-cookie-policy table {
+        border-collapse: inherit
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy {
+        font-family: inherit;
+        font-size: 1rem
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h3,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h4,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {
+        color: dimgray
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description {
+        margin-bottom: 1em
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup {
+        margin-left: 1.5em
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group-desc,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td {
+        font-size: .9em
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td span,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td a {
+        font-size: inherit
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group {
+        font-size: 1em;
+        margin-bottom: .6em
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-title {
+        margin-bottom: 1.2em
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy>section {
+        margin-bottom: 1em
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th {
+        min-width: 75px
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a:hover {
+        background: #fff
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead {
+        background-color: #f6f6f4;
+        font-weight: bold
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-mobile-border {
+        display: none
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy section {
+        margin-bottom: 2em
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li {
+        list-style: disc;
+        margin-left: 1.5em
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-subgroup ul li h4 {
+        display: inline-block
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table {
+        border-collapse: inherit;
+        margin: auto;
+        border: 1px solid #d7d7d7;
+        border-radius: 5px;
+        border-spacing: initial;
+        width: 100%;
+        overflow: hidden
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td {
+        border-bottom: 1px solid #d7d7d7;
+        border-right: 1px solid #d7d7d7
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td {
+        border-bottom: 0px
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr th:last-child,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr td:last-child {
+        border-right: 0px
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type {
+        width: 25%
+      }
+
+      .ot-sdk-cookie-policy[dir=rtl] {
+        text-align: left
+      }
+
+      #ot-sdk-cookie-policy h3 {
+        font-size: 1.5em
+      }
+
+      @media only screen and (max-width: 530px) {
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) table,
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead,
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tbody,
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) th,
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td,
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr {
+          display: block
+        }
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px
+        }
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr {
+          margin: 0 0 1em 0
+        }
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd),
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) tr:nth-child(odd) a {
+          background: #f6f6f4
+        }
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td {
+          border: none;
+          border-bottom: 1px solid #eee;
+          position: relative;
+          padding-left: 50%
+        }
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before {
+          position: absolute;
+          height: 100%;
+          left: 6px;
+          width: 40%;
+          padding-right: 10px
+        }
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) .ot-mobile-border {
+          display: inline-block;
+          background-color: #e4e4e4;
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 45%;
+          width: 2px
+        }
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) td:before {
+          content: attr(data-label);
+          font-weight: bold
+        }
+
+        .ot-sdk-cookie-policy:not(#ot-sdk-cookie-policy-v2) li {
+          word-break: break-word;
+          word-wrap: break-word
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table {
+          overflow: hidden
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td {
+          border: none;
+          border-bottom: 1px solid #d7d7d7
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table,
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead,
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tbody,
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th,
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr {
+          display: block
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-host,
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table .ot-cookies-type {
+          width: auto
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy tr {
+          margin: 0 0 1em 0
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before {
+          height: 100%;
+          width: 40%;
+          padding-right: 10px
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before {
+          content: attr(data-label);
+          font-weight: bold
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li {
+          word-break: break-word;
+          word-wrap: break-word
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+          z-index: -9999
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td {
+          border-bottom: 1px solid #d7d7d7;
+          border-right: 0px
+        }
+
+        #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td:last-child {
+          border-bottom: 0px
+        }
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h5,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy span,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td,
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description {
+        color: #696969;
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th {
+        color: #696969;
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group {
+        color: #696969;
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {
+        color: #696969;
+      }
+
+      #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table th {
+        background-color: #F8F8F8;
+      }
+
+    
